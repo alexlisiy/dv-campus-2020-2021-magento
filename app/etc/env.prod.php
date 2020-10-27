@@ -76,5 +76,41 @@ return [
     ],
     'install' => [
         'date' => 'Sat, 03 Oct 2020 21:11:55 +0000'
+    ],
+    'system' => [
+        'default' => [
+            'web' => [
+                'unsecure' => [
+                    'base_url' => 'https://oleksandr-lysyi.local/',
+                    'base_link_url' => '{{unsecure_base_url}}',
+                    'base_static_url' => 'https://oleksandr-lysyi.local/static/',
+                    'base_media_url' => 'https://oleksandr-lysyi.local/media/'
+                ],
+                'secure' => [
+                    'base_url' => 'https://oleksandr-lysyi.local/',
+                    'base_link_url' => '{{secure_base_url}}',
+                    'base_static_url' => 'https://oleksandr-lysyi.local/static/',
+                    'base_media_url' => 'https://oleksandr-lysyi.local/media/'
+                ],
+            ],
+        ],
+        'websites' => [
+            'additional_website' => [
+                'web' => [
+                    'unsecure' => [
+                        'base_url' => 'https://oleksandr-lysyi-additional.local/',
+                        'base_link_url' => 'https://oleksandr-lysyi-additional.local/',
+                        'base_static_url' => 'https://oleksandr-lysyi-additional.local/static/',
+                        'base_media_url' => 'https://oleksandr-lysyi-additional.local/media/'
+                    ],
+                    'secure' => [
+                        'base_url' => 'https://oleksandr-lysyi-additional.local/',
+                        'base_link_url' => 'https://oleksandr-lysyi-additional.local/',
+                        'base_static_url' => 'https://oleksandr-lysyi-additional.local/static/',
+                        'base_media_url' => 'https://oleksandr-lysyi-additional.local/media/'
+                    ]
+                ]
+            ]
+        ]
     ]
 ];
