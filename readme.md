@@ -40,3 +40,11 @@ Deployment process flow implemented in the above files:
 7) switch to the production mode;
 8) turn off maintenance (only for `deploy-full.sh`).
 
+
+# Run Grunt #
+
+To run Grunt, run the command
+
+```
+grunt exec:oleksandrlysyi_lumanew_en_us && grunt less:oleksandrlysyi_lumanew_en_us
+```
