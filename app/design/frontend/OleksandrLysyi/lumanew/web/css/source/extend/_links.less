@@ -1,0 +1,36 @@
+& when (@media-common = true) {
+    body {
+        a:visited,
+        .alink:visited,
+        .product-item-name,
+        .product.name a,
+        .product-item-name > a:hover,
+        .product.name a > a:hover,
+        .product-item-name > a:visited,
+        .product.name a > a:visited,
+        .product-item-actions .actions-secondary > .action:before {
+            color: @color-orange-red1;
+        }
+
+
+        .minicart-wrapper .action.showcart:before,
+        .minicart-wrapper .action.showcart:hover:before {
+            color: @color-white;
+        }
+        .compare.wrapper .counter.qty {
+            color: @color-white;
+            font-weight: @font-weight__bold;
+        }
+
+        a.action,
+        a.action.towishlist span,
+        a.action.tocompare span {
+            color: @color-orange-red1;
+        }
+
+        .product-social-links .action.towishlist:before,
+        .product-social-links .action.tocompare:before {
+            color: @color-orange-red1;
+        }
+    }
+}
