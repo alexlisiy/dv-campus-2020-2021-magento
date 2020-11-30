@@ -8,6 +8,14 @@
         .product.name a > a:hover,
         .product-item-name > a:visited,
         .product.name a > a:visited,
+        .pages a.page,
+        .pages a.page:hover,
+        .pages strong.page,
+        .pages strong.page:hover,
+        a.action.next,
+        a.action.next:hover,
+        .pages .action:visited,
+        .pages .action.next:before,
         .product-item-actions .actions-secondary > .action:before {
             color: @color-orange-red1;
         }
@@ -17,7 +25,24 @@
         .minicart-wrapper .action.showcart:hover:before {
             color: @color-white;
         }
-        .compare.wrapper .counter.qty {
+        .compare.wrapper .counter.qty,
+        .data.switch .counter,
+        nav.navigation>ul>li>a,
+        .navigation .level0.active > .level-top,
+        .navigation .level0.has-active > .level-top,
+        .navigation .level0 > .level-top,
+        .navigation .level0 > .level-top:hover,
+        .navigation .submenu:not(:first-child) > li > a,
+        .navigation .submenu:not(:first-child) > li > a:visited,
+        .navigation .submenu:not(:first-child) > li > a:hover,
+        .navigation .level0 .submenu li.parent > a > .ui-menu-icon,
+        .nav-sections-item-switch,
+        .nav-sections .header.links li,
+        .nav-sections .header.links li:hover,
+        .nav-sections .header.links li:visited,
+        .nav-sections .header.links li > a,
+        .nav-sections .header.links li > a:hover,
+        .nav-sections .header.links li > a:visited {
             color: @color-white;
             font-weight: @font-weight__bold;
         }
@@ -33,4 +58,15 @@
             color: @color-orange-red1;
         }
     }
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .navigation .level0 .submenu {
+        background: @color-sky-blue1;
+    }
+    .navigation .level0 .submenu a.ui-state-active ,
+    .navigation .level0 .submenu a:hover,
+    .navigation .level1 .submenu a:hover{
+        background: @color-blue3;
+    }
+
 }
