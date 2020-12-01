@@ -1,0 +1,19 @@
+& when (@media-common = true) {
+    // common styles without breakpoints go here
+    body {
+        .page-footer,
+        .footer.content .links > li {
+            background-color: @color-sky-blue1;
+        }
+        .footer.content .links a,
+        .footer.content .links a:visited,
+        .footer.content .links a:hover {
+            color: @color-white;
+            font-weight: @font-weight__bold;
+        }
+        .copyright {
+            background-color: @color-blue3;
+            color: @color-white;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 /**
- *  grunt exec:oleksandrlysyi_lumanew_en_us && grunt less:oleksandrlysyi_lumanew_en_us
+ *  grunt exec:oleksandrlysyi_lumanew_en_us && grunt less:oleksandrlysyi_lumanew_en_us && grunt watch
  */
 module.exports = {
     oleksandrlysyi_lumanew_en_us: {
